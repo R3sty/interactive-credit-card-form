@@ -27,12 +27,12 @@
     &__main {
 
         @include util.breakpoint(medium) {
-            background-color: hsl(120, 93%, 23%);
+            background-color: hsl(120, 48%, 81%);
 
         }
 
         @include util.breakpoint-down(medium) {
-            background-color: hsl(81, 52%, 69%);
+            background-color: hsl(81, 79%, 59%);
             height: 50vh;
         }
 
@@ -41,11 +41,11 @@
 
     &__form {
         @include util.breakpoint(medium) {
-            background-color: hsl(253, 52%, 41%);
+            background-color: hsl(253, 43%, 81%);
         }
 
         @include util.breakpoint-down(medium) {
-            background-color: hsl(205, 79%, 63%);
+            background-color: hsl(205, 68%, 72%);
             height: 50vh;
         }
     }

@@ -1,11 +1,14 @@
 import CardForm from './sections/credit_card_form/CardForm';
-import CardImage from './sections/credit_card_image/CardImage';
+import CardContainer from './sections/credit_card_container/CardContainer';
+import { CardInfoContextProvider } from './context/cardInfoContext';
 
 function App() {
 	return (
 		<div className='app'>
-			<CardImage />
-			<CardForm />
+			<CardInfoContextProvider>
+				<CardContainer />
+				<CardForm />
+			</CardInfoContextProvider>
 		</div>
 	);
 }
