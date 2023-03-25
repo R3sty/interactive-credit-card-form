@@ -1,0 +1,53 @@
+@use '../util/' as util;
+
+.app {
+    display: grid;
+    grid-template-rows: auto auto;
+    margin-inline: auto;
+
+
+    @include util.breakpoint(large) {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+
+
+    }
+
+    &__main,
+    &__form {
+        display: flex;
+        text-align: center;
+        margin: 0 auto;
+        height: 100vh;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__main {
+
+        @include util.breakpoint(medium) {
+            background-color: hsl(120, 93%, 23%);
+
+        }
+
+        @include util.breakpoint-down(medium) {
+            background-color: hsl(81, 52%, 69%);
+            height: 50vh;
+        }
+
+
+    }
+
+    &__form {
+        @include util.breakpoint(medium) {
+            background-color: hsl(253, 52%, 41%);
+        }
+
+        @include util.breakpoint-down(medium) {
+            background-color: hsl(205, 79%, 63%);
+            height: 50vh;
+        }
+    }
+
+}

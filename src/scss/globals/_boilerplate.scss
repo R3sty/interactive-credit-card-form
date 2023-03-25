@@ -1,0 +1,22 @@
+@use '../util/' as util;
+
+html {
+    box-sizing: border-box;
+    font-size: 100% //62.5%;
+}
+
+//ensures that all elements on the page have the same box-sizing property as the HTML element, which is set to "border-box".
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    display: grid;
+    font-family: util.$spaceGrotesk;
+}
