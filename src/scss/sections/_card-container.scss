@@ -1,5 +1,29 @@
-.card-container {
-    background-color: hsl(350, 100%, 88%);
+@use '../util/' as util;
 
+$small-letter: calc(9rem / 16);
+$large-letter: calc(16rem / 16);
 
+.__main {
+    background-color: aqua;
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    display: grid;
+    place-items: center;
+
+    & div {
+        width: util.rem(286);
+        height: util.rem(157);
+        position: relative;
+        display: grid;
+        flex-direction: column;
+        border-radius: 5px;
+    }
+}
+
+.__card-front {
+    background-position: center;
+    background-image: url('../../assets/images/bg-card-front.png');
+    background-size: cover;
+    z-index: 1;
 }

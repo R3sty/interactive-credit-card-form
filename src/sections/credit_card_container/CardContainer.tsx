@@ -1,5 +1,6 @@
 import { useContext } from 'react';
 import { CardInfoGlobalContext } from '../../context/cardInfoContext';
+import cardFront from '../../assets/images/bg-card-front.png';
 
 const CardContainer = () => {
 	const { cardHolderName, cardNumber, cardMMExp, cardYYExp, cardCvv } =
@@ -11,8 +12,8 @@ const CardContainer = () => {
 	};
 
 	return (
-		<main className='card-container'>
-			<div>
+		<main className='__main'>
+			<div className='__card-front'>
 				<svg
 					width='84'
 					height='47'
