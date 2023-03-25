@@ -11,7 +11,7 @@ const CardContainer = () => {
 	};
 
 	return (
-		<div>
+		<main className='card-container'>
 			<div>
 				<svg
 					width='84'
@@ -42,7 +42,7 @@ const CardContainer = () => {
 			<div>
 				<p>{!cardCvv ? '000' : cardCvv}</p>
 			</div>
-		</div>
+		</main>
 	);
 };
 

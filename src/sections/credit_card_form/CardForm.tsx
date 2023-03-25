@@ -21,7 +21,7 @@ const CardForm = () => {
 		cardMMExp,
 	} = useCardInfoContext();
 	return (
-		<div>
+		<div className='form-container'>
 			{!formSubmission && (
 				<FormContainer>
 					<CardInput
