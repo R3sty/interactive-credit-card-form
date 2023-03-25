@@ -1,3 +1,95 @@
+@use '../util/' as util;
+
 .form-container {
-    background-color: hsl(210, 63%, 55%);
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    margin: auto;
+    font-size: calc(13rem / 16);
+
+    label {
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+
+    input {
+        width: 100%;
+        height: 40px;
+        border-radius: 10px;
+        border: 1px solid var(--light-gray);
+        padding: 0 15px;
+        margin-top: 10px;
+
+        &::placeholder {
+            color: var(--light-gray);
+        }
+
+        &:invalid {
+            outline-color: var(--error);
+        }
+    }
+
+    span {
+        display: block;
+        margin-left: 10px;
+        margin-bottom: 15px;
+        color: var(--error);
+        min-height: calc(17rem / 16);
+
+    }
+
+    .__card-details {
+        width: 100%;
+        display: flex;
+        ;
+        grid-template-rows: auto auto;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+
+        .__card-input {
+            width: 95%;
+
+            p {
+                align-self: flex-end;
+                padding: 0px;
+                margin: 0px;
+            }
+
+            .__mmyy {
+                display: flex;
+
+                input {
+                    width: 95%;
+                }
+            }
+        }
+
+        .__card-input-2 {
+            width: 95%;
+        }
+    }
+
+    button {
+        width: 100%;
+    }
+}
+
+.confirmation-container {
+    $margin: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h2 {
+        text-transform: uppercase;
+        letter-spacing: calc(2rem / 16);
+        font-size: calc(32rem / 16);
+        font-weight: normal;
+        margin-bottom: calc($margin / 3);
+    }
+
+    p {
+        font-size: calc(18rem / 16);
+        color: var(--dark-grayish-violet)
+    }
 }

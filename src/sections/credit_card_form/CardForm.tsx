@@ -3,6 +3,7 @@ import { errorMessages } from './validateInput';
 import { useCardInfoContext } from '../../context/cardInfoContext';
 import FormContainer from './CardFormContainer';
 import Button from '../../components/Button/Button';
+import '../../scss/styles.scss';
 
 const errors = errorMessages();
 
@@ -51,34 +52,39 @@ const CardForm = () => {
 						}}
 					/>
 
-					<div>
-						<p>EXP. DATE (MM/YY)</p>
-						<div>
-							<CardInput
-								formTitle={''}
-								labelId={'month'}
-								placeholder={'MM'}
-								min={1}
-								max={12}
-								errorMessage={errors.monthError}
-								onChangeVal={(e) => {
-									setCardMMExp(e.target.value);
-								}}
-							/>
+					<div className='__card-details'>
+						<div className='__card-input'>
+							<p>EXP. DATE (MM/YY)</p>
+							<div className='__mmyy'>
+								<div>
+									<CardInput
+										formTitle={''}
+										labelId={'month'}
+										placeholder={'MM'}
+										min={1}
+										max={12}
+										errorMessage={errors.monthError}
+										onChangeVal={(e) => {
+											setCardMMExp(e.target.value);
+										}}
+									/>
+								</div>
+								<div>
+									<CardInput
+										formTitle={''}
+										labelId={'year'}
+										placeholder={'YY'}
+										min={new Date().getFullYear() - 2000}
+										errorMessage={errors.yearError}
+										onChangeVal={(e) => {
+											setCardYYExp(e.target.value);
+										}}
+									/>
+								</div>
+							</div>
 						</div>
-						<div>
-							<CardInput
-								formTitle={''}
-								labelId={'year'}
-								placeholder={'YY'}
-								min={new Date().getFullYear() - 2000}
-								errorMessage={errors.yearError}
-								onChangeVal={(e) => {
-									setCardYYExp(e.target.value);
-								}}
-							/>
-						</div>
-						<div>
+
+						<div className='__card-input-2'>
 							<CardInput
 								type='tel'
 								formTitle={'CVC'}

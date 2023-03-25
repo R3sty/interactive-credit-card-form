@@ -4,6 +4,9 @@
     display: grid;
     grid-template-rows: auto auto;
     margin-inline: auto;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
 
 
     @include util.breakpoint(large) {

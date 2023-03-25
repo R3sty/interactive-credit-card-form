@@ -1,22 +1,7 @@
 @use '../util/' as util;
 
-h1,
-h2,
-h3 {
-    font-weight: 700;
-    line-height: 1.1;
-    margin-top: 0;
-}
-
-h1 {
-    //font-size: clamp(1.75rem, 1rem + 2vw, 2.5rem) 
-    font-size: 2rem; //7.5vw //28px;
-    color: var(--text-color);
-}
-
-p {
-    margin-top: 0;
-    font-size: 1rem;
+body {
+    font-family: util.$spaceGrotesk;
 }
 
 a,

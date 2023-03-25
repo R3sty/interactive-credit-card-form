@@ -1,6 +1,8 @@
 @forward 'globals';
 @forward 'layout';
 @forward 'sections';
+@forward 'components';
 @import './globals/index';
 @import './layout/index';
 @import './sections/index';
+@import './components/index';

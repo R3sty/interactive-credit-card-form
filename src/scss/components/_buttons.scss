@@ -1,0 +1,18 @@
+@use '../util/' as util;
+
+button {
+    cursor: pointer;
+    font-family: util.$spaceGrotesk;
+    background-color: var(--button);
+    color: var(--light-gray);
+    border: none;
+    border-radius: 7px;
+    font-size: 1rem;
+    letter-spacing: 0.5px;
+    padding: calc(12rem / 16);
+    transition: transform 0.3s;
+
+    &:hover {
+        transform: scale(0.97);
+    }
+}
