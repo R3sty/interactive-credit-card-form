@@ -20,7 +20,7 @@ $large-letter: calc(16rem / 16);
         border-radius: util.em(10);
         box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
         color: var(--white);
-        background: url('./public/assets/images/bg-card-front.png');
+        background: url('/public/assets/images/bg-card-front.png');
 
 
         .__card-logo {
@@ -71,7 +71,7 @@ $large-letter: calc(16rem / 16);
         transform: translateY(-60%);
         width: util.rem(286);
         height: util.rem(157);
-        background-image: url('../../../public/assets/images/bg-card-back.png');
+        background-image: url('/public/assets/images/bg-card-back.png');
         background-position: center;
         background-size: cover;
         border-radius: util.em(10);
@@ -90,7 +90,7 @@ $large-letter: calc(16rem / 16);
 
     @include util.breakpoint(large) {
         height: 100vh;
-        background: url('./public/assets/images/bg-main-desktop.png');
+        background: url('/public/assets/images/bg-main-desktop.png');
         background-repeat: no-repeat;
         background-size: 75% auto;
 
