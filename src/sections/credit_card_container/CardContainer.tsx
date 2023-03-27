@@ -15,8 +15,8 @@ const CardContainer = () => {
 		<main className='__main'>
 			<div className='__card-front'>
 				<svg
-					width='84'
-					height='47'
+					className='__card-logo'
+					viewBox='0 0 84 47'
 					fill='none'
 					xmlns='http://www.w3.org/2000/svg'
 				>
@@ -26,22 +26,22 @@ const CardContainer = () => {
 						stroke='#fff'
 					/>
 				</svg>
-				<div>
-					<p>
+				<div className='__card-details'>
+					<p className='__card-number'>
 						{!cardNumber ? '0000 0000 0000 0000' : formatCcNumber(cardNumber)}
 					</p>
-					<h1>
+					<div className='__card-holder'>
 						<p>{!cardHolderName ? 'Jane Appleseed' : cardHolderName}</p>
-						<p>
-							<span>{!cardMMExp ? '00/' : <span>/</span> + cardMMExp}</span>
+						<p className='__card-expiry'>
+							{!cardMMExp ? <span>00/</span> : <span>{cardMMExp}/</span>}
 							<span>{!cardYYExp ? '00' : cardYYExp}</span>
 						</p>
-					</h1>
+					</div>
 				</div>
 			</div>
 
-			<div>
-				<p>{!cardCvv ? '000' : cardCvv}</p>
+			<div className='__card-back'>
+				<p className='__card-cvv'>{!cardCvv ? '000' : cardCvv}</p>
 			</div>
 		</main>
 	);

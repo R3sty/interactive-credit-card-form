@@ -2,10 +2,10 @@
 
 .form-container {
     width: 100%;
-    max-width: 360px;
-    margin: 0 auto;
-    margin: auto;
+    max-width: util.rem(360);
     font-size: calc(13rem / 16);
+    margin-bottom: util.rem(40);
+
 
     label {
         text-transform: uppercase;
@@ -72,6 +72,9 @@
     button {
         width: 100%;
     }
+
+
+
 }
 
 .confirmation-container {
@@ -91,5 +94,15 @@
     p {
         font-size: calc(18rem / 16);
         color: var(--dark-grayish-violet)
+    }
+
+
+
+}
+
+@include util.breakpoint(large) {
+    .form-container {
+        max-width: util.rem(381);
+        margin-left: util.rem(120)
     }
 }
