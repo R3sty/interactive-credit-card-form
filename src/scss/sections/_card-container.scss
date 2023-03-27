@@ -25,12 +25,13 @@ $large-letter: calc(16rem / 16);
 
         .__card-logo {
             margin-left: util.rem(20);
-            margin-top: util.rem(10);
+            margin-top: util.rem(20);
             width: util.rem(42);
             height: util.rem(24);
         }
 
         .__card-details {
+            padding-top: util.rem(10);
             text-transform: uppercase;
             display: grid;
 

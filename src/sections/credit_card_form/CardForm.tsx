@@ -4,6 +4,7 @@ import { useCardInfoContext } from '../../context/cardInfoContext';
 import FormContainer from './CardFormContainer';
 import Button from '../../components/Button/Button';
 import '../../scss/styles.scss';
+import Confirmation from '../confirmation/Confirmation';
 
 const errors = errorMessages();
 
@@ -22,8 +23,8 @@ const CardForm = () => {
 		cardMMExp,
 	} = useCardInfoContext();
 	return (
-		<div className='form-container'>
-			{!formSubmission && (
+		<main className='form-container'>
+			{(!formSubmission && (
 				<FormContainer>
 					<CardInput
 						type='text'
@@ -101,8 +102,13 @@ const CardForm = () => {
 					</div>
 					<Button type={'submit'} buttonText={'Confirm'}></Button>
 				</FormContainer>
-			)}
-		</div>
+			)) ||
+				(formSubmission && (
+					<div className='__confirmation'>
+						<Confirmation />
+					</div>
+				))}
+		</main>
 	);
 };
 
