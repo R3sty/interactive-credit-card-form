@@ -45,12 +45,10 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/R3sty/interactive-credit-card-form)
-- Live Site URL: [Add live site URL here](https://r3sty.github.io/interactive-credit-card-form/)
+- [Solution URL](https://github.com/R3sty/interactive-credit-card-form)
+- [Live site URL](https://r3sty.github.io/interactive-credit-card-form/)
 
 ## My process
-
-The challenge required the development of a responsive pricing component for a landing page. The design came in a Sketch file, and I had to develop the layout and styling from scratch.
 
 This was my first time working with SCSS, and I must say it was quite an experience. I had to learn the syntax and how to use mixins, variables, and nesting to create reusable styles. It was a bit challenging at first, but with time and practice, it became easier.
 
@@ -65,8 +63,6 @@ Another thing I learned while working on this challenge was the use of context p
 ### What I learned
 
 Completing this challenge was a significant milestone in my frontend development journey. I enjoyed learning new skills and techniques while building a beautiful and responsive pricing component. I am grateful for the opportunity, and I look forward to more exciting challenges in the future.
-
-### Continued development
 
 ### Useful resources
 
