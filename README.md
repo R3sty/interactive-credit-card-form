@@ -71,4 +71,4 @@ I learned a lot of practical tips from @TheCoderCoder. She helped me with settin
 ## Author
 
 - Frontend Mentor - [@R3sty](https://www.frontendmentor.io/profile/R3sty)
-- Twitter - [@yourusername](https://twitter.com/R3XIST)
+- Twitter - [@R3xist](https://twitter.com/R3XIST)
